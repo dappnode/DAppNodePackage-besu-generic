@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  besu:
+    build:
+      args:
+        NETWORK: mainnet
+    ports:
+      - 30414:30414/tcp
+      - 30414:30414/udp
+    image: besu.besu.public.dappnode.eth:1.2.11

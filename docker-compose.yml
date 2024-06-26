@@ -1,0 +1,23 @@
+version: "3.5"
+services:
+  besu:
+    build:
+      context: besu
+      args:
+        UPSTREAM_VERSION: 24.6.0
+    volumes:
+      - data:/var/lib/besu
+    environment:
+      STORAGE_FORMAT: BONSAI
+      SYNC_MODE: X_CHECKPOINT
+      CONFIG_MODE: normal
+      WS_ENABLED: "true"
+      MAX_HTTP_CONNECTIONS: "170"
+      P2P_PORT: "30414"
+      BESU_OPTS: ""
+      EXTRA_OPTS: ""
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+volumes:
+  data: {}

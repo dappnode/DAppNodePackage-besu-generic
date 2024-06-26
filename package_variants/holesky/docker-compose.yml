@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  besu:
+    build:
+      args:
+        NETWORK: holesky
+    ports:
+      - 30415:30415/tcp
+      - 30415:30415/udp
+    image: besu.besu.public.dappnode.eth:0.1.1
