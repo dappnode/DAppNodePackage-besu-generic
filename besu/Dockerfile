@@ -1,7 +1,9 @@
 ARG UPSTREAM_VERSION
-ARG NETWORK
 
 FROM hyperledger/besu:${UPSTREAM_VERSION}
+
+ARG NETWORK
+ARG P2P_PORT
 
 COPY security /security
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
@@ -25,7 +27,8 @@ ENV BESU_RPC_WS_HOST=0.0.0.0 \
     BESU_METRICS_ENABLED=true \
     BESU_METRICS_HOST=0.0.0.0 \
     BESU_DATA_PATH=/var/lib/besu \
-    NETWORK=${NETWORK}
+    NETWORK=${NETWORK} \
+    P2P_PORT=${P2P_PORT}
 
 USER besu
 
