@@ -19,12 +19,11 @@ ENV BESU_RPC_WS_HOST=0.0.0.0 \
     BESU_METRICS_HOST=0.0.0.0 \
     BESU_DATA_PATH=${DATA_DIR} \
     P2P_PORT=${P2P_PORT} \
-    SECURITY_PATH=/security \
+    JWT_PATH=/jwtsecret.hex \
     STAKER_SCRIPTS_URL=https://github.com/dappnode/staker-package-scripts/releases/download/${STAKER_SCRIPTS_VERSION}
 
 ADD ${STAKER_SCRIPTS_URL}/execution_tools.sh /etc/profile.d/
 
-COPY security ${SECURITY_PATH}
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 USER root
