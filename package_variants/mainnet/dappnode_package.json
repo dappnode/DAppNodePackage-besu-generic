@@ -24,12 +24,6 @@
       "homepage": "https://github.com/hyperledger/besu",
       "docs": "https://besu.hyperledger.org/en/stable/"
     },
-    "globalEnvs": [
-      {
-        "envs": ["CONSENSUS_CLIENT_MAINNET"],
-        "services": ["besu"]
-      }
-    ],
     "optionalDependencies": {
       "lighthouse.dnp.dappnode.eth": ">=1.0.12",
       "prysm.dnp.dappnode.eth": ">=3.0.16",
