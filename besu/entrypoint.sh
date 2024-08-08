@@ -12,6 +12,7 @@ echo "[INFO - entrypoint] Running client"
 
 # shellcheck disable=SC2086
 exec besu --rpc-ws-enabled="${WS_ENABLED}" \
+  --rpc-ws-port=8546 \
   --engine-jwt-secret="${JWT_PATH}" \
   --data-storage-format="${STORAGE_FORMAT}" \
   --sync-mode="${SYNC_MODE}" \
