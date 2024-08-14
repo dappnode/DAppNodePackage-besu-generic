@@ -34,8 +34,6 @@ RUN apt-get update && apt-get --no-install-recommends --yes install curl && apt-
 RUN mkdir ${DATA_DIR} && chown -R besu:besu ${DATA_DIR} && \
     chmod +rx /usr/local/bin/entrypoint.sh /etc/profile.d/execution_tools.sh
 
-USER besu
-
 # This env changes the variant
 # Placed at the end to regenerate the least amount of layers
 ENV NETWORK=${NETWORK}

@@ -11,7 +11,7 @@ services:
       - data:/var/lib/besu
     environment:
       STORAGE_FORMAT: BONSAI
-      SYNC_MODE: X_CHECKPOINT
+      SYNC_MODE: CHECKPOINT
       CONFIG_MODE: normal
       WS_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
