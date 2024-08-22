@@ -1,7 +1,7 @@
 {
   "upstream": [
     {
-      "version": "24.7.1",
+      "version": "24.8.0",
       "repo": "hyperledger/besu",
       "arg": "UPSTREAM_VERSION"
     },
@@ -11,7 +11,7 @@
       "arg": "STAKER_SCRIPTS_VERSION"
     }
   ],
-  "shortDescription": "Besu is an Apache 2.0 licensed, MainNet compatible, Ethereum client written in Java.",
+  "shortDescription": "Besu is an Apache 2.0 licensed, Mainnet compatible, Ethereum client written in Java.",
   "description": "Hyperledger Besu is an open source Ethereum client developed under the Apache 2.0 license and written in Java. It runs on public and private networks",
   "type": "service",
   "architectures": ["linux/amd64", "linux/arm64"],
