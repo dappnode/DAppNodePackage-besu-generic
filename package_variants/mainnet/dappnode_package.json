@@ -1,35 +1,34 @@
 {
-    "name": "besu.public.dappnode.eth",
-    "version": "1.2.11",
-    "requirements": {
-      "minimumDappnodeVersion": "0.2.60"
+  "name": "besu.public.dappnode.eth",
+  "version": "1.2.11",
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.60"
+  },
+  "exposable": [
+    {
+      "name": "Besu JSON RPC",
+      "description": "JSON RPC endpoint for Besu",
+      "serviceName": "besu",
+      "port": 8545
     },
-    "exposable": [
-      {
-        "name": "Besu JSON RPC",
-        "description": "JSON RPC endpoint for Besu",
-        "serviceName": "besu",
-        "port": 8545
-      },
-      {
-        "name": "Besu JSON RPC (WS)",
-        "description": "JSON RPC WebSocket endpoint for Besu",
-        "serviceName": "besu",
-        "port": 8546
-      }
-    ],
-    "links": {
-      "endpoint": "http://besu.public.dappnode:8545",
-      "apiEngine": "http://besu.public.dapppnode:8551",
-      "homepage": "https://github.com/hyperledger/besu",
-      "docs": "https://besu.hyperledger.org/en/stable/"
-    },
-    "optionalDependencies": {
-      "lighthouse.dnp.dappnode.eth": ">=1.0.12",
-      "prysm.dnp.dappnode.eth": ">=3.0.16",
-      "teku.dnp.dappnode.eth": ">=2.0.13",
-      "nimbus.dnp.dappnode.eth": ">=1.0.14",
-      "lodestar.dnp.dappnode.eth": ">=0.1.18"
+    {
+      "name": "Besu JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Besu",
+      "serviceName": "besu",
+      "port": 8546
     }
+  ],
+  "links": {
+    "endpoint": "http://besu.public.dappnode:8545",
+    "apiEngine": "http://besu.public.dapppnode:8551",
+    "homepage": "https://github.com/hyperledger/besu",
+    "docs": "https://besu.hyperledger.org/en/stable/"
+  },
+  "optionalDependencies": {
+    "lighthouse.dnp.dappnode.eth": ">=1.0.12",
+    "prysm.dnp.dappnode.eth": ">=3.0.16",
+    "teku.dnp.dappnode.eth": ">=2.0.13",
+    "nimbus.dnp.dappnode.eth": ">=1.0.14",
+    "lodestar.dnp.dappnode.eth": ">=0.1.18"
   }
-  
+}
