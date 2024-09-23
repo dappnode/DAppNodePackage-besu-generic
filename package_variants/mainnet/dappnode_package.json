@@ -1,9 +1,6 @@
 {
   "name": "besu.public.dappnode.eth",
   "version": "1.2.11",
-  "requirements": {
-    "minimumDappnodeVersion": "0.2.60"
-  },
   "exposable": [
     {
       "name": "Besu JSON RPC",
