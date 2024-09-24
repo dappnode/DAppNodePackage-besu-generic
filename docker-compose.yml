@@ -16,7 +16,7 @@ services:
       WS_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
       P2P_PORT: "30414"
-      BESU_OPTS: ""
+      BESU_OPTS: "-Xmx8g"
       EXTRA_OPTS: ""
     restart: unless-stopped
     security_opt:
