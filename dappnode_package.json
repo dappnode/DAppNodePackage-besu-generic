@@ -26,8 +26,5 @@
     "type": "git",
     "url": "https://github.com/dappnode/DAppNodePackage-besu-generic.git"
   },
-  "license": "Apache-2.0",
-  "requirements": {
-    "minimumDappnodeVersion": "0.2.95"
-  }
+  "license": "Apache-2.0"
 }
