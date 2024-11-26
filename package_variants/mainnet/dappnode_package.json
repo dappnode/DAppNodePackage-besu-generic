@@ -27,8 +27,5 @@
     "nimbus.dnp.dappnode.eth": ">=0.1.14",
     "lodestar.dnp.dappnode.eth": ">=0.1.22",
     "teku.dnp.dappnode.eth": ">=2.0.13"
-  },
-  "requirements": {
-    "minimumDappnodeVersion": "0.2.101"
   }
 }
