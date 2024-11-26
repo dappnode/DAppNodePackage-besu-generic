@@ -5,7 +5,7 @@ services:
       context: besu
       args:
         UPSTREAM_VERSION: 24.10.0
-        STAKER_SCRIPTS_VERSION: v0.1.0
+        STAKER_SCRIPTS_VERSION: v0.1.1
         DATA_DIR: /var/lib/besu
     volumes:
       - data:/var/lib/besu
