@@ -20,12 +20,5 @@
     "apiEngine": "http://holesky-besu.dapppnode:8551",
     "homepage": "https://github.com/hyperledger/besu",
     "docs": "https://besu.hyperledger.org/en/stable/"
-  },
-  "optionalDependencies": {
-    "lighthouse-holesky.dnp.dappnode.eth": ">=0.1.4",
-    "prysm-holesky.dnp.dappnode.eth": ">=0.1.4",
-    "teku-holesky.dnp.dappnode.eth": ">=0.1.3",
-    "nimbus-holesky.dnp.dappnode.eth": ">=0.1.4",
-    "lodestar-holesky.dnp.dappnode.eth": ">=0.1.11"
   }
 }
