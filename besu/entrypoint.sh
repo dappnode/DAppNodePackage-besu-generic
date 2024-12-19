@@ -16,6 +16,7 @@ exec besu --rpc-ws-enabled="${WS_ENABLED}" \
   --rpc-ws-enabled=true \
   --rpc-http-host='0.0.0.0' \
   --rpc-http-enabled=true \
+  --rpc-max-logs-range="${RPC_MAX_LOGS_RANGE}" \
   --host-allowlist=* \
   --rpc-http-cors-origins=* \
   --rpc-ws-port=8546 \

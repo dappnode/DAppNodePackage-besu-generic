@@ -10,6 +10,7 @@ services:
     volumes:
       - data:/var/lib/besu
     environment:
+      RPC_MAX_LOG_RANGE: "10000000"
       STORAGE_FORMAT: BONSAI
       SYNC_MODE: CHECKPOINT
       CONFIG_MODE: normal
