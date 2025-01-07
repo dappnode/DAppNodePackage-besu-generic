@@ -1,11 +1,11 @@
 [
     {
         "labels": {
-            "package": "besu.dnp.dappnode.eth",
+            "package": "besu.public.dappnode.eth",
             "service": "besu"
         },
         "targets": [
-            "besu.dappnode:9545"
+            "besu.public.dappnode:9545"
         ]
     }
 ]
