@@ -1,6 +1,6 @@
 {
   "name": "holesky-besu.dnp.dappnode.eth",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "exposable": [
     {
       "name": "Holesky Besu JSON RPC",
