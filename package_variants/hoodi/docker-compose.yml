@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  besu:
+    build:
+      args:
+        NETWORK: hoodi
+        P2P_PORT: 30416
+    ports:
+      - 30416:30416/tcp
+      - 30416:30416/udp
+    image: besu.besu.public.dappnode.eth:0.1.1
