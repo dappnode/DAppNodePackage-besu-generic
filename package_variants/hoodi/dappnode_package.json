@@ -1,0 +1,24 @@
+{
+  "name": "hoodi-besu.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "exposable": [
+    {
+      "name": "Hoodi Besu JSON RPC",
+      "description": "JSON RPC endpoint for Hoodi Besu",
+      "serviceName": "besu",
+      "port": 8545
+    },
+    {
+      "name": "Hoodi Besu JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Hoodi Besu",
+      "serviceName": "besu",
+      "port": 8546
+    }
+  ],
+  "links": {
+    "endpoint": "http://hoodi-besu.dappnode:8545",
+    "apiEngine": "http://hoodi-besu.dapppnode:8551",
+    "homepage": "https://github.com/hyperledger/besu",
+    "docs": "https://besu.hyperledger.org/en/stable/"
+  }
+}
