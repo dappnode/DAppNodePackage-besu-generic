@@ -1,13 +1,13 @@
 {
   "upstream": [
     {
-      "version": "25.2.1",
+      "version": "25.3.0",
       "repo": "hyperledger/besu",
       "arg": "UPSTREAM_VERSION"
     },
     {
       "repo": "dappnode/staker-package-scripts",
-      "version": "v0.1.1",
+      "version": "v0.1.2",
       "arg": "STAKER_SCRIPTS_VERSION"
     }
   ],
