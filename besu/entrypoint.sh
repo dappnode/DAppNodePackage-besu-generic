@@ -13,7 +13,6 @@ echo "[INFO - entrypoint] Running client"
 # shellcheck disable=SC2086
 exec besu --rpc-ws-enabled="${WS_ENABLED}" \
   --rpc-ws-host='0.0.0.0' \
-  --rpc-ws-enabled=true \
   --rpc-http-host='0.0.0.0' \
   --rpc-http-enabled=true \
   --rpc-max-logs-range="${RPC_MAX_LOGS_RANGE}" \
