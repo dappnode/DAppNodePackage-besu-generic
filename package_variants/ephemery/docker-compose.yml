@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  besu:
+    build:
+      args:
+        NETWORK: ephemery
+        P2P_PORT: 30420
+    ports:
+      - 30420:30420/tcp
+      - 30420:30420/udp
+    image: besu.besu.public.dappnode.eth:0.1.1
