@@ -1,33 +1,43 @@
 {
-  "upstream": [
-    {
-      "version": "26.5.0",
-      "repo": "hyperledger/besu",
-      "arg": "UPSTREAM_VERSION"
-    },
-    {
-      "repo": "dappnode/staker-package-scripts",
-      "version": "v0.1.2",
-      "arg": "STAKER_SCRIPTS_VERSION"
-    }
+  "architectures": [
+    "linux/amd64",
+    "linux/arm64"
   ],
-  "shortDescription": "Besu is an Apache 2.0 licensed, Mainnet compatible, Ethereum client written in Java.",
-  "description": "Hyperledger Besu is an open source Ethereum client developed under the Apache 2.0 license and written in Java. It runs on public and private networks",
-  "type": "service",
-  "architectures": ["linux/amd64", "linux/arm64"],
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "categories": ["Blockchain"],
-  "chain": "ethereum",
-  "keywords": ["besu", "ethereum", "client", "execution"],
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-besu-generic/issues"
   },
+  "categories": [
+    "Blockchain"
+  ],
+  "chain": "ethereum",
+  "description": "Hyperledger Besu is an open source Ethereum client developed under the Apache 2.0 license and written in Java. It runs on public and private networks",
+  "keywords": [
+    "besu",
+    "ethereum",
+    "client",
+    "execution"
+  ],
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/dappnode/DAppNodePackage-besu-generic.git"
   },
-  "license": "Apache-2.0",
   "requirements": {
     "minimumDappnodeVersion": "0.2.106"
-  }
+  },
+  "shortDescription": "Besu is an Apache 2.0 licensed, Mainnet compatible, Ethereum client written in Java.",
+  "type": "service",
+  "upstream": [
+    {
+      "arg": "UPSTREAM_VERSION",
+      "repo": "hyperledger/besu",
+      "version": "26.6.1"
+    },
+    {
+      "arg": "STAKER_SCRIPTS_VERSION",
+      "repo": "dappnode/staker-package-scripts",
+      "version": "v0.1.2"
+    }
+  ]
 }
