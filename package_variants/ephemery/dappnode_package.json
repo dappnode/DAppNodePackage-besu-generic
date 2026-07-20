@@ -1,0 +1,28 @@
+{
+  "name": "ephemery-besu.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "exposable": [
+    {
+      "name": "Ephemery Besu JSON RPC",
+      "description": "JSON RPC endpoint for Ephemery Besu",
+      "serviceName": "besu",
+      "port": 8545
+    },
+    {
+      "name": "Ephemery Besu JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Ephemery Besu",
+      "serviceName": "besu",
+      "port": 8546
+    }
+  ],
+  "links": {
+    "endpoint": "http://ephemery-besu.dappnode:8545",
+    "apiEngine": "http://ephemery-besu.dapppnode:8551",
+    "homepage": "https://github.com/hyperledger/besu",
+    "docs": "https://besu.hyperledger.org/en/stable/"
+  },
+  "optionalDependencies": {
+    "teku-ephemery.dnp.dappnode.eth": ">=0.1.0",
+    "lodestar-ephemery.dnp.dappnode.eth": ">=0.1.0"
+  }
+}
