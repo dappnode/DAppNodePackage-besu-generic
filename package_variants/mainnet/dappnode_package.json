@@ -1,24 +1,24 @@
 {
-  "name": "besu.public.dappnode.eth",
-  "version": "1.2.16",
   "exposable": [
     {
-      "name": "Besu JSON RPC",
       "description": "JSON RPC endpoint for Besu",
-      "serviceName": "besu",
-      "port": 8545
+      "name": "Besu JSON RPC",
+      "port": 8545,
+      "serviceName": "besu"
     },
     {
-      "name": "Besu JSON RPC (WS)",
       "description": "JSON RPC WebSocket endpoint for Besu",
-      "serviceName": "besu",
-      "port": 8546
+      "name": "Besu JSON RPC (WS)",
+      "port": 8546,
+      "serviceName": "besu"
     }
   ],
   "links": {
-    "endpoint": "http://besu.public.dappnode:8545",
     "apiEngine": "http://besu.public.dapppnode:8551",
-    "homepage": "https://github.com/hyperledger/besu",
-    "docs": "https://besu.hyperledger.org/en/stable/"
-  }
+    "docs": "https://besu.hyperledger.org/en/stable/",
+    "endpoint": "http://besu.public.dappnode:8545",
+    "homepage": "https://github.com/hyperledger/besu"
+  },
+  "name": "besu.public.dappnode.eth",
+  "version": "1.2.18"
 }
