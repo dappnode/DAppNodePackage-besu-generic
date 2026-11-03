@@ -12,7 +12,7 @@ services:
     environment:
       RPC_MAX_LOGS_RANGE: "10000000"
       STORAGE_FORMAT: BONSAI
-      SYNC_MODE: CHECKPOINT
+      SYNC_MODE: SNAP
       CONFIG_MODE: normal
       WS_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
