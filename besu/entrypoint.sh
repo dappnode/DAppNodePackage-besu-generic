@@ -8,6 +8,15 @@ echo "${JWT_SECRET}" >"${JWT_PATH}"
 
 post_jwt_to_dappmanager "${JWT_PATH}"
 
+# Installs keep the sync mode they were set up with. Besu no longer accepts
+# FAST and has deprecated CHECKPOINT, so map both to SNAP.
+case "${SYNC_MODE}" in
+FAST | CHECKPOINT)
+  echo "[WARN - entrypoint] Sync mode ${SYNC_MODE} is no longer supported by Besu; using SNAP"
+  SYNC_MODE=SNAP
+  ;;
+esac
+
 echo "[INFO - entrypoint] Running client"
 
 # shellcheck disable=SC2086
