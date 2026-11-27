@@ -1,0 +1,11 @@
+[
+    {
+        "labels": {
+            "package": "ephemery-besu.dnp.dappnode.eth",
+            "service": "besu"
+        },
+        "targets": [
+            "ephemery-besu.dappnode:9545"
+        ]
+    }
+]
